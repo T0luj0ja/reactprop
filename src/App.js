@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Profile from './components/profile/Profile';
+
 
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Profile fullName="Tolu Ayoko" bio="lorem ipsum" profession="Art curator">
+          <img src ="https://th.bing.com/th/id/R.1ec7587f424ab2f8c91ae5d59735c054?rik=dbMrxObhP2l2Vw&pid=ImgRaw&r=0" alt="art" />
+      </Profile>
     </div>
   );
 }
